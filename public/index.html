@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Panel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Control Panel</h1>
+    <fieldset>
+      <legend>Input / Output</legend>
+  
+      <form id="commandForm">
+        <div class="formGroup">
+          <label for="command">Command:</label>
+          <input autocomplete="off" placeholder="Anything..." required type="text" id="command">
+          <textarea disabled placeholder="Output goes here..." id="output" cols="20" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">Send</button>
+      </form>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Preset Commands</legend>
+  
+      <button id="shutdown">Shutdown</button>
+    </fieldset>
+    
+    <div class="final"></div>
+  </div>
+</body>
+</html>
